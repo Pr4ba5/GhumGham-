@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox spacing="25.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.DashboardContentController">
+    <padding>
+        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+    </padding>
+
+    <!-- Enhanced Colored Welcome Section with Weather -->
+    <VBox prefHeight="100.0" prefWidth="800.0" spacing="15.0" style="-fx-background-color: linear-gradient(to right, #667eea, #764ba2); -fx-padding: 30; -fx-background-radius: 20; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 12, 0, 0, 4);">
+        <HBox alignment="CENTER_LEFT" spacing="20.0">
+            <VBox spacing="15.0" HBox.hgrow="ALWAYS">
+                <Label fx:id="welcomeLabel" text="Namaste Admin," textFill="white">
+                    <font>
+                        <Font name="System Bold" size="32.0" />
+                    </font>
+                </Label>
+                <Label text="Here's what's happening with your trekking business today." textFill="rgba(255,255,255,0.9)">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="currentDateLabel" text="Dashboard Overview" textFill="rgba(255,255,255,0.8)">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+            </VBox>
+
+            <!-- Weather Section -->
+            <VBox alignment="CENTER_RIGHT" spacing="10.0" style="-fx-background-color: rgba(255,255,255,0.1); -fx-padding: 20; -fx-background-radius: 15;">
+                <HBox alignment="CENTER_RIGHT" spacing="10.0">
+                    <VBox alignment="CENTER_RIGHT" spacing="5.0">
+                        <Label fx:id="weatherLocationLabel" style="-fx-font-weight: bold; -fx-font-size: 16px;" text="Kathmandu" textFill="white" />
+                        <Label fx:id="weatherDescriptionLabel" style="-fx-font-size: 14px;" text="Loading..." textFill="rgba(255,255,255,0.9)" />
+                        <HBox alignment="CENTER_RIGHT" spacing="5.0">
+                            <Label fx:id="weatherTempLabel" style="-fx-font-weight: bold; -fx-font-size: 24px;" text="--°C" textFill="white" />
+                            <Label fx:id="weatherIconLabel" style="-fx-font-size: 32px;" text="☀️" />
+                        </HBox>
+                    </VBox>
+                </HBox>
+                <HBox alignment="CENTER_RIGHT" spacing="15.0">
+                    <VBox alignment="CENTER" spacing="2.0">
+                        <Label style="-fx-font-size: 12px;" text="Humidity" textFill="rgba(255,255,255,0.8)" />
+                        <Label fx:id="weatherHumidityLabel" style="-fx-font-weight: bold; -fx-font-size: 14px;" text="--%" textFill="white" />
+                    </VBox>
+                    <VBox alignment="CENTER" spacing="2.0">
+                        <Label style="-fx-font-size: 12px;" text="Wind" textFill="rgba(255,255,255,0.8)" />
+                        <Label fx:id="weatherWindLabel" style="-fx-font-weight: bold; -fx-font-size: 14px;" text="-- km/h" textFill="white" />
+                    </VBox>
+                </HBox>
+            </VBox>
+        </HBox>
+    </VBox>
+
+    <!-- Plain Statistics Cards (REMOVED COLORS) -->
+    <HBox spacing="25.0">
+        <!-- Total Tourists Card - Plain -->
+        <VBox maxWidth="-Infinity" prefHeight="208.0" prefWidth="200.0" spacing="15.0" style="-fx-background-color: white; -fx-padding: 30; -fx-background-radius: 20; -fx-border-color: #e0e0e0; -fx-border-radius: 20; -fx-border-width: 1; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 10, 0, 0, 3);" HBox.hgrow="ALWAYS">
+            <Label text="Total Tourists" textFill="#333333">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+                <children>
+                    <ImageView fitHeight="74.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../Images/Icons/tourist-icon.png" />
+                        </image>
+                    </ImageView>
+                    <Label fx:id="totalTouristsLabel" text="0" textFill="#333333">
+                        <font>
+                            <Font name="System Bold" size="42.0" />
+                        </font>
+                        <padding>
+                            <Insets left="20.0" />
+                        </padding>
+                    </Label>
+                </children>
+                <padding>
+                    <Insets top="20.0" />
+                </padding>
+            </HBox>
+        </VBox>
+
+        <!-- Active Guides Card -->
+        <VBox maxWidth="-Infinity" prefHeight="208.0" prefWidth="150.0" spacing="15.0" style="-fx-background-color: white; -fx-padding: 30; -fx-background-radius: 20; -fx-border-color: #e0e0e0; -fx-border-radius: 20; -fx-border-width: 1; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 10, 0, 0, 3);" HBox.hgrow="ALWAYS">
+            <Label text="Active Guides" textFill="#333333">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="86.0" prefWidth="120.0" spacing="15.0">
+                <children>
+                    <ImageView fitHeight="66.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../Images/Icons/guide-icon.png" />
+                        </image>
+                    </ImageView>
+                    <Label fx:id="activeGuidesLabel" text="0" textFill="#333333">
+                        <font>
+                            <Font name="System Bold" size="42.0" />
+                        </font>
+                        <padding>
+                            <Insets left="20.0" />
+                        </padding>
+                    </Label>
+                </children>
+                <padding>
+                    <Insets top="20.0" />
+                </padding>
+            </HBox>
+        </VBox>
+      <VBox maxWidth="-Infinity" prefHeight="208.0" prefWidth="150.0" spacing="15.0" style="-fx-background-color: white; -fx-padding: 30; -fx-background-radius: 20; -fx-border-color: #e0e0e0; -fx-border-radius: 20; -fx-border-width: 1; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 10, 0, 0, 3);" HBox.hgrow="ALWAYS">
+         <children>
+            <Label text="Attractions" textFill="#333333">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="86.0" prefWidth="120.0" spacing="15.0">
+               <children>
+                  <ImageView fitHeight="66.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Icons/attractions-icon.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="attractionsCount" text="0" textFill="#333333">
+                     <font>
+                        <Font name="System Bold" size="42.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+
+        <!-- Total Emergencies Card - Plain -->
+        <VBox prefHeight="147.0" prefWidth="415.0" spacing="15.0" style="-fx-background-color: white; -fx-padding: 30; -fx-background-radius: 20; -fx-border-color: #e0e0e0; -fx-border-radius: 20; -fx-border-width: 1; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 10, 0, 0, 3);" HBox.hgrow="ALWAYS">
+            <HBox alignment="CENTER_LEFT" spacing="15.0">
+                <VBox spacing="5.0">
+                    <Label text="Emergencies" textFill="#333333">
+                        <font>
+                            <Font name="System Bold" size="18.0" />
+                        </font>
+                    </Label>
+               <HBox prefHeight="100.0" prefWidth="76.0">
+                  <children>
+                         <ImageView fitHeight="75.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                             <image>
+                                 <Image url="@../Images/Icons/emergency-icon.png" />
+                             </image>
+                         </ImageView>
+                          <Label fx:id="totalEmergenciesLabel" text="0" textFill="#e53e3e">
+                              <font>
+                                  <Font name="System Bold" size="42.0" />
+                              </font>
+                              <padding>
+                                  <Insets left="20.0" />
+                              </padding>
+                          </Label>
+                  </children>
+                  <padding>
+                     <Insets top="20.0" />
+                  </padding>
+               </HBox>
+                </VBox>
+                 <!-- Activity List Only (NO COUNTERS) -->
+                 <ScrollPane fitToWidth="true" prefHeight="130.0" prefWidth="558.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-background: transparent;">
+                     <VBox fx:id="activityList" spacing="20.0" style="-fx-padding: 10;" />
+                 </ScrollPane>
+            </HBox>
+        </VBox>
+    </HBox>
+
+    <!-- Main Content Row with Charts -->
+    <HBox spacing="30.0" VBox.vgrow="ALWAYS">
+        <!-- Booking Trends Chart -->
+        <VBox prefHeight="500.0" spacing="20.0" style="-fx-background-color: white; -fx-padding: 30; -fx-background-radius: 20; -fx-border-color: #e0e0e0; -fx-border-radius: 20; -fx-border-width: 1; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 10, 0, 0, 3);" HBox.hgrow="ALWAYS">
+            <!-- Chart Title -->
+            <HBox alignment="CENTER_LEFT" spacing="15.0">
+                <Label style="-fx-font-size: 24px;" text="📊" />
+                <VBox spacing="5.0">
+                    <Label text="Booking Trends by Attraction" textFill="#333333">
+                        <font>
+                            <Font name="System Bold" size="22.0" />
+                        </font>
+                    </Label>
+                    <Label text="Popular destinations and booking statistics" textFill="#666666">
+                        <font>
+                            <Font size="14.0" />
+                        </font>
+                    </Label>
+                </VBox>
+            </HBox>
+            <Separator style="-fx-background-color: #f0f0f0;" />
+
+            <!-- Bar Chart -->
+            <BarChart fx:id="bookingTrendsChart" legendVisible="false" prefHeight="400.0" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
+                <xAxis>
+                    <CategoryAxis side="BOTTOM" style="-fx-tick-label-fill: #333333; -fx-tick-label-font-size: 14px; -fx-tick-label-rotation: 0;" tickLabelRotation="0" />
+                </xAxis>
+                <yAxis>
+                    <NumberAxis side="LEFT" style="-fx-tick-label-fill: #333333; -fx-tick-label-font-size: 14px;" />
+                </yAxis>
+            </BarChart>
+        </VBox>
+
+        <!-- Enhanced Nationality Pie Chart Section -->
+        <VBox prefHeight="500.0" prefWidth="600.0" spacing="20.0" style="-fx-background-color: white; -fx-padding: 30; -fx-background-radius: 20; -fx-border-color: #e0e0e0; -fx-border-radius: 20; -fx-border-width: 1; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 10, 0, 0, 3);" HBox.hgrow="ALWAYS">
+            <!-- Pie Chart Title -->
+            <HBox alignment="CENTER_LEFT" spacing="15.0">
+                <Label style="-fx-font-size: 24px;" text="🌍" />
+                <VBox spacing="5.0">
+                    <Label text="Tourist Nationalities" textFill="#333333">
+                        <font>
+                            <Font name="System Bold" size="22.0" />
+                        </font>
+                    </Label>
+                    <Label fx:id="nationalityStatsLabel" text="Diversity analysis of registered tourists" textFill="#666666">
+                        <font>
+                            <Font size="14.0" />
+                        </font>
+                    </Label>
+                </VBox>
+            </HBox>
+            <Separator style="-fx-background-color: #f0f0f0;" />
+
+            <!-- Pie Chart with Legend -->
+            <HBox spacing="20.0" VBox.vgrow="ALWAYS">
+                <!-- Large Responsive Pie Chart -->
+                <PieChart fx:id="touristsPieChart" prefHeight="350.0" prefWidth="350.0" HBox.hgrow="ALWAYS" />
+
+                <!-- Color-Coded Legend -->
+                <VBox fx:id="nationalityLegend" prefWidth="200.0" spacing="12.0" style="-fx-padding: 10; -fx-background-color: #f8f9fa; -fx-background-radius: 10; -fx-border-color: #e9ecef; -fx-border-radius: 10; -fx-border-width: 1;">
+                    <Label style="-fx-font-weight: bold; -fx-font-size: 16px; -fx-text-fill: #333333;" text="Legend" />
+                    <Separator style="-fx-background-color: #dee2e6;" />
+                    <!-- Legend items will be added dynamically -->
+                </VBox>
+            </HBox>
+        </VBox>
+    </HBox>
+</VBox>

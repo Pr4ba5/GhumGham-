@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox spacing="20.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Guide.GuideTouristContentController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <!-- Main Tourists List -->
+    <VBox spacing="20.0" HBox.hgrow="ALWAYS">
+        <!-- Header -->
+        <HBox alignment="CENTER_LEFT" spacing="20.0">
+            <Label text="Tourists" textFill="#333333">
+                <font>
+                    <Font name="System Bold" size="24.0" />
+                </font>
+            </Label>
+        </HBox>
+
+        <!-- Search and Filter -->
+        <HBox spacing="10.0">
+            <TextField fx:id="searchField" prefWidth="300.0" promptText="Search tourists/locations/trips..." style="-fx-background-radius: 20; -fx-padding: 8; -fx-border-color: #e0e0e0; -fx-border-radius: 20;" />
+        </HBox>
+
+        <!-- Tourists List -->
+        <ScrollPane fitToWidth="true" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
+            <VBox fx:id="touristsList" spacing="15.0">
+                <!-- Tourists will be populated by controller -->
+            </VBox>
+        </ScrollPane>
+    </VBox>
+</HBox>

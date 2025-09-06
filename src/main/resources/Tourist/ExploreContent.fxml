@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox spacing="20.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Tourist.ExploreContentController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <!-- Header -->
+    <Label text="Explore Adventures" textFill="#333333">
+        <font>
+            <Font name="System Bold" size="24.0" />
+        </font>
+    </Label>
+
+    <!-- Search Bar -->
+    <TextField fx:id="searchField" prefWidth="400.0" promptText="Search for Attractions"
+               style="-fx-background-radius: 25; -fx-padding: 12; -fx-border-color: #e0e0e0; -fx-border-radius: 25; -fx-font-size: 14;" />
+
+    <!-- Treks Container -->
+    <ScrollPane fx:id="scrollPane" fitToWidth="true" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
+        <content>
+            <VBox fx:id="treksContainer" spacing="20.0">
+                <padding>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </padding>
+            </VBox>
+        </content>
+    </ScrollPane>
+</VBox>

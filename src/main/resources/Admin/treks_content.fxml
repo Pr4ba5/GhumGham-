@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox spacing="20.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.TreksContentController">
+    <!-- Header -->
+    <HBox alignment="CENTER_LEFT" spacing="20.0">
+        <Label text="TREKS" textFill="#333333">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Region HBox.hgrow="ALWAYS" />
+        <TextField fx:id="searchField" prefWidth="200.0" promptText="Search treks..." style="-fx-background-radius: 5;" />
+        <ComboBox fx:id="difficultyFilter" prefWidth="150.0" />
+        <Button fx:id="addButton" mnemonicParsing="false" onAction="#addNewTrek" style="-fx-background-color: #3C7EBD;" text="Add" textFill="WHITE" />
+        <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteSelectedTrek"
+                style="-fx-background-color: #DC3545; -fx-text-fill: white; -fx-background-radius: 5;"
+                text="Delete" opacity="0.3" disable="true">
+            <HBox.margin>
+                <Insets left="10.0" />
+            </HBox.margin>
+        </Button>
+        <Button fx:id="refreshButton" mnemonicParsing="false" onAction="#refreshData"
+                style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-background-radius: 5;" text="Refresh">
+            <HBox.margin>
+                <Insets right="10.0" />
+            </HBox.margin>
+        </Button>
+    </HBox>
+
+    <!-- Treks Table -->
+    <TableView fx:id="treksTable" style="-fx-background-color: white; -fx-background-radius: 10;" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="trekNameColumn" prefWidth="150.0" text="Trek Name" />
+            <TableColumn fx:id="dateColumn" prefWidth="100.0" text="Date" />
+            <TableColumn fx:id="durationColumn" prefWidth="80.0" text="Duration" />
+            <TableColumn fx:id="difficultyColumn" prefWidth="80.0" text="Difficulty" />
+            <TableColumn fx:id="maxAltitudeColumn" prefWidth="100.0" text="Max Altitude" />
+            <TableColumn fx:id="costColumn" prefWidth="80.0" text="Cost" />
+            <TableColumn fx:id="bestSeasonColumn" prefWidth="100.0" text="Best Season" />
+            <TableColumn fx:id="guideColumn" prefWidth="150.0" text="Guide" />
+        </columns>
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+        </padding>
+    </TableView>
+
+    <!-- Footer with statistics -->
+    <HBox alignment="CENTER_LEFT" spacing="20.0" style="-fx-background-color: white; -fx-background-radius: 5; -fx-padding: 15;">
+        <Label fx:id="totalTreksLabel" text="Total Treks: 0" textFill="#666666">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="easyCountLabel" text="Easy: 0" textFill="#4CAF50">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="moderateCountLabel" text="Moderate: 0" textFill="#FF9800">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="hardCountLabel" text="Hard: 0" textFill="#F44336">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Region HBox.hgrow="ALWAYS" />
+        <Label fx:id="selectedTrekLabel" text="No trek selected" textFill="#999999">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </Label>
+    </HBox>
+</VBox>

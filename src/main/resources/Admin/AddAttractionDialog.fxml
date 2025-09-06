@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox spacing="15.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AddAttractionDialogController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <!-- Dialog Title -->
+    <Label text="Add New Attraction" textFill="#333333">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Label>
+
+    <!-- Name Field -->
+    <VBox spacing="5.0">
+        <Label text="Attraction Name *" textFill="#555555">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </Label>
+        <TextField fx:id="nameField" prefWidth="300.0" promptText="Enter attraction name" style="-fx-background-radius: 5; -fx-border-color: #ddd; -fx-border-radius: 5;" />
+    </VBox>
+
+    <!-- Location Field -->
+    <VBox spacing="5.0">
+        <Label text="Location *" textFill="#555555">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </Label>
+        <TextField fx:id="locationField" prefWidth="300.0" promptText="Enter location" style="-fx-background-radius: 5; -fx-border-color: #ddd; -fx-border-radius: 5;" />
+    </VBox>
+
+    <!-- Difficulty Field -->
+    <VBox spacing="5.0">
+        <Label text="Difficulty Level *" textFill="#555555">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="difficultyComboBox" prefWidth="300.0" promptText="Select difficulty level" style="-fx-background-radius: 5;" />
+    </VBox>
+
+    <!-- Type Field -->
+    <VBox spacing="5.0">
+        <Label text="Attraction Type *" textFill="#555555">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </Label>
+        <TextField fx:id="typeField" prefWidth="300.0" promptText="e.g., Mountain, Lake, Temple, etc." style="-fx-background-radius: 5; -fx-border-color: #ddd; -fx-border-radius: 5;" />
+    </VBox>
+
+    <!-- Remarks Field -->
+    <VBox spacing="5.0">
+        <Label text="Remarks / Additional Information" textFill="#555555">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </Label>
+        <TextArea fx:id="remarksArea" prefHeight="80.0" prefWidth="300.0" promptText="Enter any additional remarks or warnings..." style="-fx-background-radius: 5; -fx-border-color: #ddd; -fx-border-radius: 5;" wrapText="true" />
+    </VBox>
+
+    <!-- Required Fields Note -->
+    <Label text="* Required fields" textFill="#999999">
+        <font>
+            <Font size="10.0" />
+        </font>
+    </Label>
+
+    <!-- Button Section -->
+    <HBox alignment="CENTER_RIGHT" spacing="10.0">
+        <VBox.margin>
+            <Insets top="10.0" />
+        </VBox.margin>
+
+        <Region HBox.hgrow="ALWAYS" />
+
+        <Button fx:id="cancelButton" mnemonicParsing="false" prefWidth="80.0" style="-fx-background-color: #f44336; -fx-text-fill: white; -fx-background-radius: 5;" text="Cancel" />
+
+        <Button fx:id="saveButton" mnemonicParsing="false" prefWidth="80.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-background-radius: 5;" text="Save" />
+    </HBox>
+</VBox>

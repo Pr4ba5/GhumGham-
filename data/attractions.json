@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Mount Everest Base Camp",
+    "location": "Solukhumbhu",
+    "difficulty": "Hard",
+    "type": "Mountain Trek",
+    "remarks": "World-famous trekking destination; highest mountain base camp in the world."
+  },
+  {
+    "id": 2,
+    "name": "Annapurna Base Camp",
+    "location": "Annapurna Region",
+    "difficulty": "Hard",
+    "type": "Mountain Trek",
+    "remarks": "Stunning views of Annapurna range; popular for moderate-level trekkers."
+  },
+  {
+    "id": 3,
+    "name": "Pashupatinath Temple",
+    "location": "Kathmandu",
+    "difficulty": "Easy",
+    "type": "Religious Site",
+    "remarks": "Sacred Hindu Temple; UNESCO World Heritage Site."
+  },
+  {
+    "id": 4,
+    "name": "Boudhanath Stupa",
+    "location": "Kathmandu",
+    "difficulty": "Easy",
+    "type": "Religious Site",
+    "remarks": "One of the largest stupas in the world; peaceful and spiritual."
+  },
+  {
+    "id": 5,
+    "name": "Swayambhunath",
+    "location": "Kathmandu",
+    "difficulty": "Easy",
+    "type": "Religious Site",
+    "remarks": "Buddhist stupa with great city views; lots of monkeys."
+  },
+  {
+    "id": 6,
+    "name": "Rara Lake",
+    "location": "Magu",
+    "difficulty": "Moderate",
+    "type": "Lake",
+    "remarks": "Nepal\u0027s largest lake; remote and serene"
+  },
+  {
+    "id": 7,
+    "name": "Pokhara",
+    "location": "Pokhara, Nepal",
+    "difficulty": "Easy",
+    "type": "Lake",
+    "remarks": "Swim Swim"
+  }
+]

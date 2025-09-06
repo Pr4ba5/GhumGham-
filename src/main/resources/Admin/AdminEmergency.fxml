@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox spacing="20.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminEmergencyController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <!-- Header -->
+    <HBox alignment="CENTER_LEFT" spacing="20.0">
+        <Label text="Emergency Management" textFill="#e53e3e">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+
+        <!-- Spacer -->
+        <Region HBox.hgrow="ALWAYS" />
+
+        <!-- Statistics -->
+        <HBox spacing="20.0" alignment="CENTER_RIGHT">
+            <VBox alignment="CENTER" spacing="5.0" style="-fx-background-color: #f8f9fa; -fx-padding: 10; -fx-background-radius: 8; -fx-border-color: #dee2e6; -fx-border-radius: 8;">
+                <Label fx:id="totalEmergenciesLabel" text="Total: 0" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-text-fill: #333333;" />
+                <Label text="Emergencies" style="-fx-font-size: 12px; -fx-text-fill: #666666;" />
+            </VBox>
+
+            <VBox alignment="CENTER" spacing="5.0" style="-fx-background-color: #fff3cd; -fx-padding: 10; -fx-background-radius: 8; -fx-border-color: #ffeaa7; -fx-border-radius: 8;">
+                <Label fx:id="pendingEmergenciesLabel" text="Pending: 0" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-text-fill: #856404;" />
+                <Label text="Pending" style="-fx-font-size: 12px; -fx-text-fill: #856404;" />
+            </VBox>
+
+            <VBox alignment="CENTER" spacing="5.0" style="-fx-background-color: #d4edda; -fx-padding: 10; -fx-background-radius: 8; -fx-border-color: #c3e6cb; -fx-border-radius: 8;">
+                <Label fx:id="resolvedEmergenciesLabel" text="Resolved: 0" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-text-fill: #155724;" />
+                <Label text="Resolved" style="-fx-font-size: 12px; -fx-text-fill: #155724;" />
+            </VBox>
+        </HBox>
+    </HBox>
+
+    <!-- Filters Row -->
+    <HBox alignment="CENTER_LEFT" spacing="15.0">
+        <Label text="Filters:" style="-fx-font-weight: bold; -fx-font-size: 14px;" />
+
+        <ComboBox fx:id="statusFilter" prefWidth="120.0" promptText="Status"
+                  style="-fx-background-radius: 5; -fx-padding: 8; -fx-border-color: #cccccc; -fx-border-radius: 5;" />
+
+        <ComboBox fx:id="severityFilter" prefWidth="120.0" promptText="Severity"
+                  style="-fx-background-radius: 5; -fx-padding: 8; -fx-border-color: #cccccc; -fx-border-radius: 5;" />
+
+        <TextField fx:id="searchField" prefWidth="200.0" promptText="Search emergencies..."
+                   style="-fx-background-radius: 5; -fx-padding: 8; -fx-border-color: #cccccc; -fx-border-radius: 5;" />
+
+        <!-- Spacer -->
+        <Region HBox.hgrow="ALWAYS" />
+
+        <Button fx:id="refreshButton" text="Refresh"
+                style="-fx-background-color: #6c757d; -fx-text-fill: white; -fx-padding: 8 16; -fx-background-radius: 5; -fx-cursor: hand; -fx-font-weight: bold;" />
+    </HBox>
+
+    <!-- Emergency Table -->
+    <TableView fx:id="emergencyTable" prefHeight="400.0"
+               style="-fx-background-color: white; -fx-border-color: #e0e0e0; -fx-border-width: 1; -fx-background-radius: 5;"
+               VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="60.0" text="ID" style="-fx-alignment: CENTER;" />
+            <TableColumn fx:id="typeColumn" prefWidth="150.0" text="Emergency Type" style="-fx-alignment: CENTER-LEFT;" />
+            <TableColumn fx:id="guideColumn" prefWidth="120.0" text="Guide" style="-fx-alignment: CENTER-LEFT;" />
+            <TableColumn fx:id="locationColumn" prefWidth="150.0" text="Location" style="-fx-alignment: CENTER-LEFT;" />
+            <TableColumn fx:id="severityColumn" prefWidth="80.0" text="Severity" style="-fx-alignment: CENTER;" />
+            <TableColumn fx:id="statusColumn" prefWidth="100.0" text="Status" style="-fx-alignment: CENTER;" />
+            <TableColumn fx:id="reportedColumn" prefWidth="140.0" text="Reported" style="-fx-alignment: CENTER;" />
+        </columns>
+
+        <!-- Table styling -->
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+        </columnResizePolicy>
+
+        <!-- Placeholder for empty table -->
+        <placeholder>
+            <VBox alignment="CENTER" spacing="10.0" style="-fx-padding: 50;">
+                <Label text="No emergencies found" style="-fx-font-size: 16px; -fx-text-fill: #666666;" />
+            </VBox>
+        </placeholder>
+    </TableView>
+
+    <!-- Bottom Action Bar -->
+    <HBox alignment="CENTER_RIGHT" spacing="15.0">
+        <Button fx:id="viewDetailsButton" text="View Details" disable="true"
+                style="-fx-background-color: transparent; -fx-border-color: #007bff; -fx-border-radius: 5; -fx-text-fill: #007bff; -fx-padding: 8 16; -fx-cursor: hand;" />
+        <Button fx:id="resolveEmergencyButton" text="Mark as Resolved" disable="true"
+                style="-fx-background-color: #28a745; -fx-text-fill: white; -fx-padding: 8 16; -fx-background-radius: 5; -fx-cursor: hand; -fx-font-weight: bold;" />
+    </HBox>
+</VBox>

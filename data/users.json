@@ -1,0 +1,241 @@
+[
+  {
+    "id": "1753605236004",
+    "firstName": "Prabhash",
+    "lastName": "khadka",
+    "email": "admin@admin",
+    "phone": "9869027044",
+    "password": "1234",
+    "userType": "admin"
+  },
+  {
+    "id": "1753875036009",
+    "firstName": "Sarun",
+    "lastName": "Maharjan",
+    "email": "SarunMaharjan@gmail.com",
+    "phone": "9869027001",
+    "password": "1234",
+    "userType": "user",
+    "nationality": "nepali"
+  },
+  {
+    "id": "1753875101001",
+    "firstName": "Sarun",
+    "lastName": "Maharjan",
+    "email": "sarun1@gmail.com",
+    "phone": "9869027001",
+    "password": "1234",
+    "userType": "user",
+    "nationality": "nepali"
+  },
+  {
+    "id": "1753875101002",
+    "firstName": "Sanam",
+    "lastName": "Maharjan",
+    "email": "sanam2@gmail.com",
+    "phone": "9869027002",
+    "password": "1234",
+    "userType": "user",
+    "nationality": "nepali"
+  },
+  {
+    "id": "1753875101003",
+    "firstName": "Aarav",
+    "lastName": "Sharma",
+    "email": "aarav3@gmail.com",
+    "phone": "9869027003",
+    "password": "1234",
+    "userType": "user",
+    "nationality": "indian"
+  },
+  {
+    "id": "1753875101004",
+    "firstName": "Li",
+    "lastName": "Wei",
+    "email": "li4@gmail.com",
+    "phone": "9869027004",
+    "password": "1234",
+    "userType": "user",
+    "nationality": "chinese"
+  },
+  {
+    "id": "1753875101005",
+    "firstName": "Yuki",
+    "lastName": "Tanaka",
+    "email": "yuki5@gmail.com",
+    "phone": "9869027005",
+    "password": "1234",
+    "userType": "user",
+    "nationality": "japanese"
+  },
+  {
+    "id": "1753875101006",
+    "firstName": "Emma",
+    "lastName": "Dubois",
+    "email": "emma6@gmail.com",
+    "phone": "9869027006",
+    "password": "1234",
+    "userType": "user",
+    "nationality": "french"
+  },
+  {
+    "id": "1753875101007",
+    "firstName": "Lukas",
+    "lastName": "Müller",
+    "email": "lukas7@gmail.com",
+    "phone": "9869027007",
+    "password": "1234",
+    "userType": "user",
+    "nationality": "german"
+  },
+  {
+    "id": "1753875101008",
+    "firstName": "Sita",
+    "lastName": "Thapa",
+    "email": "sita8@gmail.com",
+    "phone": "9869027008",
+    "password": "1234",
+    "userType": "user",
+    "nationality": "nepali"
+  },
+  {
+    "id": "1753875101009",
+    "firstName": "Ravi",
+    "lastName": "Verma",
+    "email": "ravi9@gmail.com",
+    "phone": "9869027009",
+    "password": "1234",
+    "userType": "user",
+    "nationality": "indian"
+  },
+  {
+    "id": "1753875101010",
+    "firstName": "Chen",
+    "lastName": "Liang",
+    "email": "chen10@gmail.com",
+    "phone": "9869027010",
+    "password": "1234",
+    "userType": "user",
+    "nationality": "chinese"
+  },
+  {
+    "id": "1753875101011",
+    "firstName": "Haruto",
+    "lastName": "Kobayashi",
+    "email": "haruto11@gmail.com",
+    "phone": "9869027011",
+    "password": "1234",
+    "userType": "user",
+    "nationality": "japanese"
+  },
+  {
+    "id": "1753875101012",
+    "firstName": "Marie",
+    "lastName": "Leroy",
+    "email": "marie12@gmail.com",
+    "phone": "9869027012",
+    "password": "1234",
+    "userType": "user",
+    "nationality": "french"
+  },
+  {
+    "id": "1753875101013",
+    "firstName": "Anna",
+    "lastName": "Schmidt",
+    "email": "anna13@gmail.com",
+    "phone": "9869027013",
+    "password": "1234",
+    "userType": "user",
+    "nationality": "german"
+  },
+  {
+    "id": "1753875101014",
+    "firstName": "Pratik",
+    "lastName": "Shrestha",
+    "email": "pratik14@gmail.com",
+    "phone": "9869027014",
+    "password": "1234",
+    "userType": "user",
+    "nationality": "nepali"
+  },
+  {
+    "id": "1753875101015",
+    "firstName": "Meena",
+    "lastName": "Rai",
+    "email": "meena15@gmail.com",
+    "phone": "9869027015",
+    "password": "1234",
+    "userType": "user",
+    "nationality": "nepali"
+  },
+  {
+    "id": "1753875101016",
+    "firstName": "Arjun",
+    "lastName": "Singh",
+    "email": "arjun16@gmail.com",
+    "phone": "9869027016",
+    "password": "1234",
+    "userType": "user",
+    "nationality": "indian"
+  },
+  {
+    "id": "1753875101017",
+    "firstName": "Ting",
+    "lastName": "Zhao",
+    "email": "ting17@gmail.com",
+    "phone": "9869027017",
+    "password": "1234",
+    "userType": "user",
+    "nationality": "chinese"
+  },
+  {
+    "id": "1753875101018",
+    "firstName": "Sakura",
+    "lastName": "Yamamoto",
+    "email": "sakura18@gmail.com",
+    "phone": "9869027018",
+    "password": "1234",
+    "userType": "user",
+    "nationality": "japanese"
+  },
+  {
+    "id": "1753875101019",
+    "firstName": "Pierre",
+    "lastName": "Martin",
+    "email": "pierre19@gmail.com",
+    "phone": "9869027019",
+    "password": "1234",
+    "userType": "user",
+    "nationality": "french"
+  },
+  {
+    "id": "1753875101020",
+    "firstName": "Jonas",
+    "lastName": "Becker",
+    "email": "jonas20@gmail.com",
+    "phone": "9869027020",
+    "password": "1234",
+    "userType": "user",
+    "nationality": "german"
+  },
+  {
+    "id": "1754413137184",
+    "firstName": "Patrick",
+    "lastName": "Chettri",
+    "email": "patrick1@gmail.com",
+    "phone": "98596412347",
+    "password": "1234",
+    "userType": "user",
+    "nationality": "spanish"
+  },
+  {
+    "id": "1754537360798",
+    "firstName": "Rukesh",
+    "lastName": "Shrestha",
+    "email": "rukesh@gmail.com",
+    "phone": "9869377651",
+    "password": "1234",
+    "userType": "user",
+    "nationality": "nepali"
+  }
+]

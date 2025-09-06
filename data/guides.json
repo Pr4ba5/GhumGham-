@@ -1,0 +1,74 @@
+[
+  {
+    "proficiencyLanguage": "Japanese",
+    "experience": "Fluent in Japanese and familiar with local traditions.",
+    "id": "1753875041001",
+    "firstName": "Hiroshi",
+    "lastName": "Yamamoto",
+    "email": "hiroshi-yamamoto@guide.com",
+    "phone": "9869027045",
+    "password": "1234",
+    "userType": "guide",
+    "nationality": "Japanese"
+  },
+  {
+    "proficiencyLanguage": "Nepali",
+    "experience": "Experienced trekking guide in the Himalayas.",
+    "id": "1753875041002",
+    "firstName": "Kiran",
+    "lastName": "Thapa",
+    "email": "kiran-thapa@guide.com",
+    "phone": "9869027046",
+    "password": "1234",
+    "userType": "guide",
+    "nationality": "Nepali"
+  },
+  {
+    "proficiencyLanguage": "Nepali",
+    "experience": "Specializes in cultural tours and historical sites.",
+    "id": "1753875041003",
+    "firstName": "Sita",
+    "lastName": "Rai",
+    "email": "sita-rai@guide.com",
+    "phone": "9869027047",
+    "password": "1234",
+    "userType": "guide",
+    "nationality": "Nepali"
+  },
+  {
+    "proficiencyLanguage": "Japanese",
+    "experience": "Works with international tourists across Japan.",
+    "id": "1753875041004",
+    "firstName": "Takumi",
+    "lastName": "Sato",
+    "email": "takumi-sato@guide.com",
+    "phone": "9869027048",
+    "password": "1234",
+    "userType": "guide",
+    "nationality": "Japanese"
+  },
+  {
+    "proficiencyLanguage": "Nepali",
+    "experience": "Mountaineering expert and certified guide.",
+    "id": "1753875041005",
+    "firstName": "Bikash",
+    "lastName": "Gurung",
+    "email": "bikash-gurung@guide.com",
+    "phone": "9869027049",
+    "password": "1234",
+    "userType": "guide",
+    "nationality": "Nepali"
+  },
+  {
+    "proficiencyLanguage": "English, nepali, hindi",
+    "experience": "Hi im very passionate travalleor and guide",
+    "id": "1754413035400",
+    "firstName": "Patrick",
+    "lastName": "betman",
+    "email": "patrick@guide.com",
+    "phone": "985623147",
+    "password": "1234",
+    "userType": "guide",
+    "nationality": "Nepali"
+  }
+]
