@@ -1,4 +1,4 @@
-# Ghamgham App 🏔️
+# Ghamgham App
 
 **Ghamgham** is a trekking management software built with **Java** and **JavaFX** (Maven project).  
 It helps connect **tourists**, **guides**, and **admins** for an organized trekking experience.
